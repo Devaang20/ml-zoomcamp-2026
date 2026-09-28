@@ -1,0 +1,17 @@
+[project]
+name = "ml-zoomcamp-2026"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Devaang20", email = "devaang201@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+ml-zoomcamp-2026 = "ml_zoomcamp_2026:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
