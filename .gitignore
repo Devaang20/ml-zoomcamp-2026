@@ -1,16 +1,74 @@
-# Python virtual environments
-venv/
+# ==========================================
+# Environments & Package Managers
+# ==========================================
 .venv/
+venv/
 env/
+ENV/
+.env
+uv.lock
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Data & cache
+# ==========================================
+# Python Bytecode & Cache
+# ==========================================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ==========================================
+# Jupyter Notebook Checkpoints & Runs
+# ==========================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ==========================================
+# Datasets & Large Archives (Local Only)
+# ==========================================
+# Ignore all 'data' directories across all subfolders
+**/data/
+data/
+
+# Raw dataset formats
 *.csv
+*.tsv
 *.parquet
+*.feather
+*.jsonl
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ==========================================
+# ML Models, Binaries & Weights
+# ==========================================
+**/models/
+models/
+
 *.pkl
+*.pickle
 *.bin
+*.joblib
 *.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.tflite
+
+# ==========================================
+# Operating System & IDE Files
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.log
