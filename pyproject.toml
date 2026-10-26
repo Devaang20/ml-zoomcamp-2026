@@ -7,7 +7,11 @@ authors = [
     { name = "Devaang20", email = "devaang201@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "fastapi>=0.159.1",
+    "scikit-learn>=1.9.1",
+    "uvicorn>=0.54.0",
+]
 
 [project.scripts]
 ml-zoomcamp-2026 = "ml_zoomcamp_2026:main"
@@ -15,3 +19,9 @@ ml-zoomcamp-2026 = "ml_zoomcamp_2026:main"
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "05-deployment/lecture",
+    "05-deployment/homework",
+]
