@@ -10,11 +10,19 @@ requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.159.1",
     "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
     "uvicorn>=0.54.0",
+    "xgboost-cpu>=3.2.0",
 ]
 
 [project.scripts]
 ml-zoomcamp-2026 = "ml_zoomcamp_2026:main"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+]
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
